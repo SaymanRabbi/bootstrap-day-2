@@ -1,0 +1,73 @@
+/* ------style button------- */
+.button-style{
+    outline: 0;
+    border: 0;
+    position: relative;
+    padding: 20px;
+    padding: 15px 70px 15px 15px;
+    font-weight: 600;
+    
+}
+/* ------nav-bar------- */
+.button-style span{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0D6EFD;
+   transform: translateY(-50%);
+   padding: 6px 0;
+   color: #fff;
+   font-weight: bolder;
+}
+.container-left,.container-right{
+    flex: 1;
+}
+.hero-text{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.container-right{
+    position: relative;
+}
+.container-right>a{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.container-right>a>span>i{
+    border-radius: 50%;
+    color: #0D6EFD;
+    font-size: 80px;
+    cursor: pointer;
+}
+.border-rounded{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    top: 28px;
+    left: -6px;
+    animation: animation .8s linear infinite;
+}
+.animation-1{
+    animation-delay:1s ;
+}
+.animation-2{
+animation-delay: 1.2s;
+}
+@keyframes animation{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
